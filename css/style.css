@@ -1,0 +1,510 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+:root {
+  /* color */
+  --nav-color: #eeeeee;
+  --bg-color: #eeeeee;
+  --bg-main: #ffff;
+  --bg-up-button: #292929;
+  --text-color: #292929;
+  --color-button-up: #292929;
+  --span-color: #292929;
+  /* font typography */
+  --fs-heading: 3.5rem;
+}
+
+/* dark mode */
+html[data-color-mode='dark'] {
+  --nav-color: #292929;
+  --bg-color: #292929;
+  --bg-main: #423f3e;
+  --text-color: #eeeeee;
+  --color-button-up: #eeeeee;
+  --span-color: #eeeeee;
+}
+
+/* reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s all linear;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}
+
+/* layout */
+.container {
+  margin: auto;
+  width: 80vw;
+  padding-top: 200px;
+}
+
+.section-container {
+  padding-top: 10rem;
+  width: 70vw;
+  margin: auto;
+}
+
+/* navbar */
+.header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 1.4rem;
+  background-color: var(--nav-color);
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+ul li {
+  width: 8vw;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navScrollChange {
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* button toggle */
+.menu-toggle {
+  display: none;
+}
+
+/* dark mode */
+.checkbox {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 99;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-darkMode {
+  position: relative;
+  width: 35px;
+  height: 28px;
+  border-radius: 20%;
+}
+
+.dark-mode img {
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 25x;
+  height: 25px;
+}
+
+/* font */
+h1 {
+  font-size: 3.5rem;
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+/* isi content */
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* poto profile */
+.profile-content img {
+  width: 300px;
+  border-radius: 10%;
+  transition: all 1s;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.profile-content img:hover {
+  border-radius: 20rem;
+  transform: rotate(360deg);
+}
+
+.introdaction {
+  line-height: 1;
+}
+
+.introdaction h4 {
+  padding-top: 0.8rem;
+  color: var(--text-color);
+}
+
+.about-me {
+  line-height: 1;
+}
+/* about Content */
+.about-content {
+  margin-top: 50px;
+  line-height: 1.8;
+  padding: 3rem;
+  background-color: var(--bg-main);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+/* akhir about Content */
+
+/* my Hobby */
+.my-hobby {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
+.icon-hobby {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.icon-hobby:hover {
+  background-color: var(--bg-main);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.icon-hobby img {
+  width: 200px;
+  height: 200px;
+}
+
+/* akhir my Hobby */
+
+/* my skills */
+.icon-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
+.icon-skill {
+  padding: 2.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.icon-skill:hover {
+  transform: translateY(-10px);
+  background-color: var(--bg-main);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* akhir my skills */
+
+/* contact me */
+.contact-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
+.icon-whatsapp .fa-whatsapp-square {
+  color: #2fb942;
+}
+
+.fa-whatsapp-square:hover {
+  transform: translateY(-10px);
+}
+
+.icon-instagram img {
+  width: 11.5rem;
+  height: 11.5rem;
+}
+
+.icon-instagram img:hover {
+  transform: translateY(-10px);
+}
+
+.icon-github .fa-github-square {
+  color: #000000;
+}
+
+.fa-github-square:hover {
+  transform: translateY(-10px);
+}
+
+.footer-content {
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.fa-heart {
+  color: #f2789f;
+}
+/* akhir contact me */
+/* button up */
+.fa-circle-chevron-up {
+  display: none !important;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  color: var(--color-button-up);
+  cursor: pointer;
+}
+
+.fa-circle-chevron-up-change {
+  display: inline-block !important;
+}
+
+.fa-circle-chevron-up:hover {
+  transform: translateY(-5px);
+}
+/* akhir button up */
+
+/* responsive */
+@media (max-width: 428px) {
+  /* navbar */
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.8s;
+    background-color: var(--nav-color);
+  }
+
+  li a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    width: 7vw;
+    height: 22px;
+  }
+
+  .menu-toggle input {
+    position: absolute;
+    width: 7vw;
+    height: 22px;
+    opacity: 0;
+    z-index: 999;
+  }
+
+  .menu-toggle span {
+    background-color: var(--span-color);
+    width: 7vw;
+    height: 4px;
+    transition: all 0.8s;
+  }
+
+  /* menu toggle */
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle span:nth-child(3) {
+    transform: scale(1);
+  }
+
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(0, 0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-15%, 0);
+  }
+
+  .slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* dark mode */
+  .checkbox {
+    height: 1.8rem;
+    width: 3.7rem;
+    opacity: 0;
+  }
+
+  .toggle-darkMode {
+    height: 1.8rem;
+    width: 1.7rem;
+  }
+
+  .toggle-darkMode img {
+    top: 4px;
+    left: 3px;
+    width: 22px;
+    height: 20px;
+  }
+
+  /* isi content */
+  .container {
+    padding-top: 20vh;
+  }
+
+  .profile-content {
+    flex-direction: column-reverse;
+  }
+
+  .profile-content img {
+    width: 60vw;
+  }
+
+  .title-profile {
+    margin-top: 8%;
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  .introdaction {
+    text-align: center;
+    line-height: 2.5rem;
+    margin-top: 15%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-container {
+    padding-top: 8rem;
+    width: 80vw;
+  }
+
+  /* my hobby */
+
+  .my-hobby {
+    justify-content: center;
+  }
+
+  .icon-hobby {
+    margin-top: -3.5rem;
+  }
+
+  .icon-hobby:hover {
+    background: none;
+    box-shadow: none;
+  }
+
+  /* skills */
+  .icon-skills {
+    justify-content: center;
+  }
+
+  .icon-skill {
+    margin-top: -3rem;
+  }
+  .icon-skill:hover {
+    background: none;
+    box-shadow: none;
+  }
+
+  /* contact me */
+  .contact-me {
+    margin: auto;
+    width: 70vw;
+    justify-content: center;
+  }
+
+  /* button up */
+  .fa-circle-chevron-up {
+    right: 0.8rem;
+    bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  /* menu toggle */
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(0, 0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@media (max-width: 360px) {
+  /* menu toggle */
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(0, 1px);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+}

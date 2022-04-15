@@ -327,13 +327,13 @@ p {
     position: relative;
     flex-direction: column;
     width: 7vw;
-    height: 22px;
+    height: 20px;
   }
 
   .menu-toggle input {
     position: absolute;
     width: 7vw;
-    height: 22px;
+    height: 20px;
     opacity: 0;
     z-index: 999;
   }
@@ -341,7 +341,7 @@ p {
   .menu-toggle span {
     background-color: var(--span-color);
     width: 7vw;
-    height: 4px;
+    height: 3px;
     transition: all 0.8s;
   }
 
@@ -355,20 +355,20 @@ p {
   }
 
   .menu-toggle span:nth-child(4) {
-    transform-origin: 0 0;
+    transform-origin: 0 100%;
   }
 
   .menu-toggle input:checked ~ span:nth-child(2) {
-    transform: rotate(45deg) translate(0, 0);
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0px);
   }
 
   .menu-toggle input:checked ~ span:nth-child(3) {
     opacity: 0;
     transform: scale(0);
-  }
-
-  .menu-toggle input:checked ~ span:nth-child(4) {
-    transform: rotate(-45deg) translate(-15%, 0);
   }
 
   .slide {
@@ -392,7 +392,7 @@ p {
     top: 4px;
     left: 3px;
     width: 22px;
-    height: 20px;
+    height: 22px;
   }
 
   /* isi content */
@@ -482,11 +482,11 @@ p {
   }
 
   .menu-toggle input:checked ~ span:nth-child(2) {
-    transform: rotate(45deg) translate(0, 0);
+    transform: rotate(45deg) translate(-1px, -1px);
   }
 
   .menu-toggle input:checked ~ span:nth-child(4) {
-    transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, -1px);
   }
 }
 
@@ -497,14 +497,14 @@ p {
   }
 
   .menu-toggle span:nth-child(4) {
-    transform-origin: 0 100%;
+    transform-origin: 0 0;
   }
 
   .menu-toggle input:checked ~ span:nth-child(2) {
-    transform: rotate(45deg) translate(0, 1px);
+    transform: rotate(45deg) translate(-1px, -1px);
   }
 
   .menu-toggle input:checked ~ span:nth-child(4) {
-    transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(-1px, -3px);
   }
 }

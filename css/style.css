@@ -135,7 +135,7 @@ h1 {
 }
 
 h4 {
-  color: blue;
+  color: var(--text-color);
 }
 
 h2 {
